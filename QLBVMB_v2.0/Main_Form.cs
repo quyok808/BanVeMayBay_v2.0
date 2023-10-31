@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QLBVMB_v2._0.Login_Register;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,21 @@ namespace QLBVMB_v2._0
         public Main_Form()
         {
             InitializeComponent();
+        }
+
+        private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void đổiMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Change_Password frm = new Change_Password();
+            button1.BackColor = frm.BackColor;
+            frm.TopLevel = false;
+            panel_Show.Controls.Add(frm);
+            frm.Dock = DockStyle.Fill;
+            frm.Show();
         }
     }
 }
