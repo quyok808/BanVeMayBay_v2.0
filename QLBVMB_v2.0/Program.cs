@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QLBVMB_v2._0.Login_Register;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace QLBVMB_v2._0
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Main_Form());
         }
     }
 }
