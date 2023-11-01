@@ -63,6 +63,46 @@ namespace QLBVMB_v2._0.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CanhPhai_MB {
+            get {
+                object obj = ResourceManager.GetObject("CanhPhai_MB", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CanhTrai_MB {
+            get {
+                object obj = ResourceManager.GetObject("CanhTrai_MB", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dau_MB {
+            get {
+                object obj = ResourceManager.GetObject("dau_MB", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Duoi_MB {
+            get {
+                object obj = ResourceManager.GetObject("Duoi_MB", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo_ao_lop_hinh_may_bay_thiet_ke_doc_la_jpg {
             get {
                 object obj = ResourceManager.GetObject("logo-ao-lop-hinh-may-bay-thiet-ke-doc-la.jpg", resourceCulture);
