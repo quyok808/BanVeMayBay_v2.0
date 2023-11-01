@@ -23,6 +23,11 @@ namespace QLBVMB_v2._0
             Application.Exit();
         }
 
+        private void Main_Form_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
         private void đổiMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Change_Password frm = new Change_Password();
@@ -30,6 +35,13 @@ namespace QLBVMB_v2._0
             frm.TopLevel = false;
             panel_Show.Controls.Add(frm);
             frm.Dock = DockStyle.Fill;
+            frm.Show();
+        }
+
+        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login frm = new Login();
             frm.Show();
         }
     }

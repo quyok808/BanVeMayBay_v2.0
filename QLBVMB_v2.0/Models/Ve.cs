@@ -13,6 +13,7 @@ namespace QLBVMB_v2._0.Models
         public Ve()
         {
             CTHDs = new HashSet<CTHD>();
+            KHACHHANGs = new HashSet<KHACHHANG>();
         }
 
         [Key]
@@ -37,5 +38,8 @@ namespace QLBVMB_v2._0.Models
         public virtual ICollection<CTHD> CTHDs { get; set; }
 
         public virtual Ghe Ghe { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<KHACHHANG> KHACHHANGs { get; set; }
     }
 }

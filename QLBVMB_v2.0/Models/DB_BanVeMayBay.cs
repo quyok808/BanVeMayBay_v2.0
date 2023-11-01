@@ -16,6 +16,7 @@ namespace QLBVMB_v2._0.Models
         public virtual DbSet<CTHD> CTHDs { get; set; }
         public virtual DbSet<Ghe> Ghes { get; set; }
         public virtual DbSet<HOADON> HOADONs { get; set; }
+        public virtual DbSet<KHACHHANG> KHACHHANGs { get; set; }
         public virtual DbSet<KHUYENMAI> KHUYENMAIs { get; set; }
         public virtual DbSet<MAYBAY> MAYBAYs { get; set; }
         public virtual DbSet<NHANVIEN> NHANVIENs { get; set; }
@@ -63,6 +64,18 @@ namespace QLBVMB_v2._0.Models
                 .HasMany(e => e.CTHDs)
                 .WithRequired(e => e.HOADON)
                 .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<KHACHHANG>()
+                .Property(e => e.TenKH)
+                .IsFixedLength();
+
+            modelBuilder.Entity<KHACHHANG>()
+                .Property(e => e.CCCD)
+                .IsFixedLength();
+
+            modelBuilder.Entity<KHACHHANG>()
+                .Property(e => e.MaVe)
+                .IsFixedLength();
 
             modelBuilder.Entity<KHUYENMAI>()
                 .Property(e => e.MaKM)
@@ -130,6 +143,11 @@ namespace QLBVMB_v2._0.Models
 
             modelBuilder.Entity<Ve>()
                 .HasMany(e => e.CTHDs)
+                .WithRequired(e => e.Ve)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<Ve>()
+                .HasMany(e => e.KHACHHANGs)
                 .WithRequired(e => e.Ve)
                 .WillCascadeOnDelete(false);
         }

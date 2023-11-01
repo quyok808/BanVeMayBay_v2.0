@@ -87,6 +87,7 @@
     <Compile Include="Models\DB_BanVeMayBay.cs" />
     <Compile Include="Models\Ghe.cs" />
     <Compile Include="Models\HOADON.cs" />
+    <Compile Include="Models\KHACHHANG.cs" />
     <Compile Include="Models\KHUYENMAI.cs" />
     <Compile Include="Models\MAYBAY.cs" />
     <Compile Include="Models\NHANVIEN.cs" />
