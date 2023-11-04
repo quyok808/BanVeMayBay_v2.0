@@ -31,6 +31,17 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main_Form));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btn_Thanhtoan = new System.Windows.Forms.Button();
+            this.lb_thanhtien = new System.Windows.Forms.Label();
+            this.btn_XoaVeDGV = new System.Windows.Forms.Button();
+            this.btn_HuyVeDGV = new System.Windows.Forms.Button();
+            this.dgv_Ve = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2 = new System.Windows.Forms.Panel();
             this.uiAvatar2 = new Sunny.UI.UIAvatar();
             this.label1 = new System.Windows.Forms.Label();
@@ -55,40 +66,150 @@
             this.inToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.txt_Clock = new System.Windows.Forms.ToolStripTextBox();
             this.panel_Show = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Ve)).BeginInit();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
-            this.panel_Show.SuspendLayout();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel1.BackColor = System.Drawing.Color.Lime;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.btn_Thanhtoan);
+            this.panel1.Controls.Add(this.lb_thanhtien);
+            this.panel1.Controls.Add(this.btn_XoaVeDGV);
+            this.panel1.Controls.Add(this.btn_HuyVeDGV);
+            this.panel1.Controls.Add(this.dgv_Ve);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 35);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(360, 799);
+            this.panel1.Size = new System.Drawing.Size(682, 938);
             this.panel1.TabIndex = 0;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(182, 284);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(316, 48);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Thông tin đặt vé";
+            // 
+            // btn_Thanhtoan
+            // 
+            this.btn_Thanhtoan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Thanhtoan.Location = new System.Drawing.Point(515, 874);
+            this.btn_Thanhtoan.Name = "btn_Thanhtoan";
+            this.btn_Thanhtoan.Size = new System.Drawing.Size(156, 59);
+            this.btn_Thanhtoan.TabIndex = 8;
+            this.btn_Thanhtoan.Text = "Thanh toán";
+            this.btn_Thanhtoan.UseVisualStyleBackColor = true;
+            // 
+            // lb_thanhtien
+            // 
+            this.lb_thanhtien.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lb_thanhtien.BackColor = System.Drawing.Color.White;
+            this.lb_thanhtien.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lb_thanhtien.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.lb_thanhtien.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_thanhtien.Location = new System.Drawing.Point(422, 808);
+            this.lb_thanhtien.Name = "lb_thanhtien";
+            this.lb_thanhtien.Size = new System.Drawing.Size(249, 53);
+            this.lb_thanhtien.TabIndex = 7;
+            this.lb_thanhtien.Text = "0";
+            this.lb_thanhtien.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // btn_XoaVeDGV
+            // 
+            this.btn_XoaVeDGV.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_XoaVeDGV.Location = new System.Drawing.Point(468, 728);
+            this.btn_XoaVeDGV.Name = "btn_XoaVeDGV";
+            this.btn_XoaVeDGV.Size = new System.Drawing.Size(100, 69);
+            this.btn_XoaVeDGV.TabIndex = 6;
+            this.btn_XoaVeDGV.Text = "Xoá toàn bộ vé";
+            this.btn_XoaVeDGV.UseVisualStyleBackColor = true;
+            // 
+            // btn_HuyVeDGV
+            // 
+            this.btn_HuyVeDGV.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_HuyVeDGV.Location = new System.Drawing.Point(574, 728);
+            this.btn_HuyVeDGV.Name = "btn_HuyVeDGV";
+            this.btn_HuyVeDGV.Size = new System.Drawing.Size(98, 69);
+            this.btn_HuyVeDGV.TabIndex = 5;
+            this.btn_HuyVeDGV.Text = "Huỷ vé";
+            this.btn_HuyVeDGV.UseVisualStyleBackColor = true;
+            // 
+            // dgv_Ve
+            // 
+            this.dgv_Ve.AllowUserToAddRows = false;
+            this.dgv_Ve.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv_Ve.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_Ve.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_Ve.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5});
+            this.dgv_Ve.Location = new System.Drawing.Point(9, 319);
+            this.dgv_Ve.Name = "dgv_Ve";
+            this.dgv_Ve.RowHeadersWidth = 51;
+            this.dgv_Ve.RowTemplate.Height = 24;
+            this.dgv_Ve.Size = new System.Drawing.Size(662, 419);
+            this.dgv_Ve.TabIndex = 4;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Họ và tên";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Số CCCD";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Mã chuyến bay";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Mã vé ";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Giá tiền";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
             // 
             // panel2
             // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.uiAvatar2);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(360, 212);
+            this.panel2.Size = new System.Drawing.Size(680, 229);
             this.panel2.TabIndex = 3;
             // 
             // uiAvatar2
@@ -97,7 +218,7 @@
             this.uiAvatar2.FillColor = System.Drawing.Color.White;
             this.uiAvatar2.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.uiAvatar2.Icon = Sunny.UI.UIAvatar.UIIcon.Image;
-            this.uiAvatar2.Location = new System.Drawing.Point(65, 10);
+            this.uiAvatar2.Location = new System.Drawing.Point(221, 17);
             this.uiAvatar2.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiAvatar2.Name = "uiAvatar2";
             this.uiAvatar2.Size = new System.Drawing.Size(225, 171);
@@ -109,7 +230,7 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("#9Slide03 Cabin", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 172);
+            this.label1.Location = new System.Drawing.Point(168, 179);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(330, 38);
             this.label1.TabIndex = 1;
@@ -119,6 +240,7 @@
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.Red;
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.dreamCloudToolStripMenuItem,
@@ -273,55 +395,12 @@
             // 
             // panel_Show
             // 
-            this.panel_Show.AutoScroll = true;
             this.panel_Show.BackColor = System.Drawing.Color.Yellow;
-            this.panel_Show.Controls.Add(this.panel4);
-            this.panel_Show.Controls.Add(this.panel3);
             this.panel_Show.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_Show.Location = new System.Drawing.Point(360, 35);
+            this.panel_Show.Location = new System.Drawing.Point(682, 35);
             this.panel_Show.Name = "panel_Show";
-            this.panel_Show.Size = new System.Drawing.Size(986, 799);
+            this.panel_Show.Size = new System.Drawing.Size(156, 938);
             this.panel_Show.TabIndex = 2;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.pictureBox4);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(0, 409);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(986, 390);
-            this.panel4.TabIndex = 2;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(104, 3);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(848, 385);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.pictureBox1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(986, 248);
-            this.panel3.TabIndex = 1;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox1.Image = global::QLBVMB_v2._0.Properties.Resources.dau_MB;
-            this.pictureBox1.Location = new System.Drawing.Point(350, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(378, 240);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // timer1
             // 
@@ -329,32 +408,93 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.panel3.Controls.Add(this.toolStrip1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(838, 35);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(508, 938);
+            this.panel3.TabIndex = 2;
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton1,
+            this.toolStripButton2,
+            this.toolStripButton3});
+            this.toolStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Padding = new System.Windows.Forms.Padding(0);
+            this.toolStrip1.Size = new System.Drawing.Size(508, 31);
+            this.toolStrip1.TabIndex = 0;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(29, 28);
+            this.toolStripButton1.Text = "toolStripButton1";
+            // 
+            // toolStripButton2
+            // 
+            this.toolStripButton2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
+            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Size = new System.Drawing.Size(29, 28);
+            this.toolStripButton2.Text = "toolStripButton2";
+            // 
+            // toolStripButton3
+            // 
+            this.toolStripButton3.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
+            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton3.Name = "toolStripButton3";
+            this.toolStripButton3.Size = new System.Drawing.Size(29, 28);
+            this.toolStripButton3.Text = "toolStripButton3";
+            // 
             // Main_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1346, 834);
+            this.ClientSize = new System.Drawing.Size(1346, 973);
             this.Controls.Add(this.panel_Show);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.IsMdiContainer = true;
             this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "Main_Form";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Main_Form";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Main_Form_FormClosed);
             this.Load += new System.EventHandler(this.Main_Form_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Ve)).EndInit();
             this.panel2.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.panel_Show.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel3.PerformLayout();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -388,9 +528,21 @@
         private Sunny.UI.UIAvatar uiAvatar2;
         private System.Windows.Forms.ToolStripTextBox txt_Clock;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.DataGridView dgv_Ve;
+        private System.Windows.Forms.Label lb_thanhtien;
+        private System.Windows.Forms.Button btn_XoaVeDGV;
+        private System.Windows.Forms.Button btn_HuyVeDGV;
+        private System.Windows.Forms.Button btn_Thanhtoan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private System.Windows.Forms.ToolStripButton toolStripButton3;
     }
 }
