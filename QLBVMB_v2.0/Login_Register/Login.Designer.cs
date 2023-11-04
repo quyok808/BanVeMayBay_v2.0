@@ -80,6 +80,7 @@
             this.txt_Password.Font = new System.Drawing.Font("#9Slide03 Arima Madurai ExtraBo", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Password.Location = new System.Drawing.Point(158, 256);
             this.txt_Password.Name = "txt_Password";
+            this.txt_Password.PasswordChar = '*';
             this.txt_Password.Size = new System.Drawing.Size(289, 45);
             this.txt_Password.TabIndex = 4;
             this.txt_Password.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Password_KeyPress);

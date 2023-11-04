@@ -43,8 +43,8 @@
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.uiAvatar2 = new Sunny.UI.UIAvatar();
-            this.label1 = new System.Windows.Forms.Label();
+            this.Avatar_NV = new Sunny.UI.UIAvatar();
+            this.lb_welcome = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.dreamCloudToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -204,38 +204,38 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.uiAvatar2);
-            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.Avatar_NV);
+            this.panel2.Controls.Add(this.lb_welcome);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(680, 229);
             this.panel2.TabIndex = 3;
             // 
-            // uiAvatar2
+            // Avatar_NV
             // 
-            this.uiAvatar2.AvatarSize = 130;
-            this.uiAvatar2.FillColor = System.Drawing.Color.White;
-            this.uiAvatar2.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.uiAvatar2.Icon = Sunny.UI.UIAvatar.UIIcon.Image;
-            this.uiAvatar2.Location = new System.Drawing.Point(221, 17);
-            this.uiAvatar2.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiAvatar2.Name = "uiAvatar2";
-            this.uiAvatar2.Size = new System.Drawing.Size(225, 171);
-            this.uiAvatar2.Style = Sunny.UI.UIStyle.Custom;
-            this.uiAvatar2.TabIndex = 0;
-            this.uiAvatar2.Text = "uiAvatar2";
-            this.uiAvatar2.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.Avatar_NV.AvatarSize = 130;
+            this.Avatar_NV.FillColor = System.Drawing.Color.White;
+            this.Avatar_NV.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.Avatar_NV.Icon = Sunny.UI.UIAvatar.UIIcon.Image;
+            this.Avatar_NV.Location = new System.Drawing.Point(221, 17);
+            this.Avatar_NV.MinimumSize = new System.Drawing.Size(1, 1);
+            this.Avatar_NV.Name = "Avatar_NV";
+            this.Avatar_NV.Size = new System.Drawing.Size(225, 171);
+            this.Avatar_NV.Style = Sunny.UI.UIStyle.Custom;
+            this.Avatar_NV.TabIndex = 0;
+            this.Avatar_NV.Text = "uiAvatar2";
+            this.Avatar_NV.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
-            // label1
+            // lb_welcome
             // 
-            this.label1.Font = new System.Drawing.Font("#9Slide03 Cabin", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(168, 179);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(330, 38);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Xin chào, Nguyễn Công Quý";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lb_welcome.Font = new System.Drawing.Font("#9Slide03 Cabin", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_welcome.Location = new System.Drawing.Point(168, 179);
+            this.lb_welcome.Name = "lb_welcome";
+            this.lb_welcome.Size = new System.Drawing.Size(330, 38);
+            this.lb_welcome.TabIndex = 1;
+            this.lb_welcome.Text = "Xin chào, Nguyễn Công Quý";
+            this.lb_welcome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // menuStrip1
             // 
@@ -431,7 +431,7 @@
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Padding = new System.Windows.Forms.Padding(0);
-            this.toolStrip1.Size = new System.Drawing.Size(508, 31);
+            this.toolStrip1.Size = new System.Drawing.Size(508, 27);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -443,7 +443,7 @@
             this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(29, 28);
+            this.toolStripButton1.Size = new System.Drawing.Size(29, 24);
             this.toolStripButton1.Text = "toolStripButton1";
             // 
             // toolStripButton2
@@ -454,7 +454,7 @@
             this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(29, 28);
+            this.toolStripButton2.Size = new System.Drawing.Size(29, 24);
             this.toolStripButton2.Text = "toolStripButton2";
             // 
             // toolStripButton3
@@ -465,7 +465,7 @@
             this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
             this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(29, 28);
+            this.toolStripButton3.Size = new System.Drawing.Size(29, 24);
             this.toolStripButton3.Text = "toolStripButton3";
             // 
             // Main_Form
@@ -524,8 +524,8 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label1;
-        private Sunny.UI.UIAvatar uiAvatar2;
+        private System.Windows.Forms.Label lb_welcome;
+        private Sunny.UI.UIAvatar Avatar_NV;
         private System.Windows.Forms.ToolStripTextBox txt_Clock;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Panel panel3;

@@ -25,7 +25,7 @@ namespace QLBVMB_v2._0
                     btn.Size = new System.Drawing.Size(50, 40);
                     btn.TabIndex = 0;
                     btn.Text = (i + 1 + j * 4).ToString();
-                    btn.Location = new Point(55 * i + 204, 45 * j + 200);
+                    btn.Location = new Point(55 * i + 400, 45 * j + 200);
                     btn.UseVisualStyleBackColor = false;
                     btn.BackColor = Color.White;
                     //btn.Click += btn_Click;
